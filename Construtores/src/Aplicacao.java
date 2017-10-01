@@ -16,6 +16,7 @@ public class Aplicacao {
 		Quadrado q = new Quadrado(2);
 		
 		System.out.println("A area do quadrado é: "+q.calcularArea());
+		System.out.println("Leonardo Anselmo".length());
 
 
 	}
