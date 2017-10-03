@@ -57,8 +57,10 @@ public class Luta {
 		if (this.aprovada) {
 			System.out.println("### DESAFIADO ###");
 			this.desafiado.apresentar();
+			System.out.println("");
 			System.out.println("### DESAFIANTE ###");
 			this.desafiante.apresentar();
+			System.out.println("");
 			
 			Random aleatorio = new Random();
 			int vencedor = aleatorio.nextInt(3);
@@ -71,12 +73,14 @@ public class Luta {
 			case 1: // Desafiado vence
 				System.out.println("Vitória do "+this.desafiado.getNome());
 				this.desafiado.ganharLuta();
-				this.desafiante.perderLuta();				
+				this.desafiante.perderLuta();	
+				this.desafiado.status();
 				break;
 			case 2: // Desafiante vence
 				System.out.println("Vitória do "+this.desafiante.getNome());
 				this.desafiado.perderLuta();
-				this.desafiante.ganharLuta();				
+				this.desafiante.ganharLuta();
+				this.desafiante.status();
 				break;
 			}			
 		} else {
