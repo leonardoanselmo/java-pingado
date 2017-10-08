@@ -8,7 +8,7 @@ public class JanelaShow extends JFrame{
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setSize(640, 480);
 		setVisible(true);
-		setTitle("Criando uma Janela");	
+		setTitle("Criando uma Janela");		
 	}
 	
 	
