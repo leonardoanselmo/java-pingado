@@ -1,8 +1,8 @@
 
 public class Vendedor {
 	
-	public void mostraPreco(ItemCaro item){
-		System.out.println("O Valor é "+item.getPreco());
+	public void mostraPreco(String nome, ItemCaro item){
+		System.out.println("O Valor de "+nome+" é "+item.getPreco());
 	}
 
 }

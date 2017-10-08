@@ -9,10 +9,12 @@ public class Aplicacao {
 		//rota.ir(f);
 		
 		AnelBrilhante a = new AnelBrilhante();
+		Iphone i = new Iphone();
 		
 		Vendedor v = new Vendedor();
-		v.mostraPreco(f);
-		v.mostraPreco(a);
+		v.mostraPreco("Ferrari", f);
+		v.mostraPreco("Anel de brilhantes", a);
+		v.mostraPreco("Iphone 8", i);
 				
 		
 	}
