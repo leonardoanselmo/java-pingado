@@ -5,11 +5,20 @@ import java.awt.Color;
 
 public class AnimaTelaDesenho extends JFrame{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JPanel tela;
 	
 	public AnimaTelaDesenho(){
 		
 		tela = new JPanel(){
+			/**
+			 * 
+			 */
+			private static final long serialVersionUID = 1L;
+
 			@Override
 			protected void paintComponent(Graphics g) {
 				g.setColor(Color.BLUE);
@@ -23,7 +32,7 @@ public class AnimaTelaDesenho extends JFrame{
                 g.fillOval(230, 220, 240, 230);
                 
                 g.setColor(Color.RED);
-                g.drawString("Eu seria um ótimo Score!", 5, 10);
+                g.drawString("Eu seria um oÌ�timo Score!", 5, 10);
 			}			
 		};
 		
