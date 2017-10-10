@@ -1,1 +1,6 @@
 /bin/
+.metadata
+*/.classpath
+*/.gitignore
+*/.project
+*/bin/
