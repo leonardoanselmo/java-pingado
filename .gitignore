@@ -1,7 +1,10 @@
 /bin/
-.metadata
+.metadata/*
+.gitignore
 */.classpath
 */.gitignore
 */.project
 */bin/
 .recommenders/
+*/.settings
+.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
