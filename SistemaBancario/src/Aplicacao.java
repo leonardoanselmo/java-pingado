@@ -17,6 +17,7 @@ public class Aplicacao {
 		c2.sacar(100);
 		
 		System.out.println("O saldo da ContaInvestimento é: "+c2.saldo);
+		System.out.println("O saldo da ContaCorrente é: "+c2.calcularSaldo());
 		
 		c2.transferir(300, c1);
 		
