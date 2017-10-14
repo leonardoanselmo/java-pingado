@@ -7,19 +7,18 @@ public class ContaBancaria {
 		this.saldo = saldo;
 	}
 	
-	public boolean sacar(double valor){
+	public void sacar(double valor) throws Exception{
 		
 		if (valor < 0) {
-			return false;
+			throw new Exception("O valor para saque é negativo.");		
 		}
 		
 		if (saldo - valor < 0) {
-			return false;
+			throw new Exception("O valor é insuficiente.");
 		}
 				
-		this.saldo -= valor;
+		this.saldo -= valor;		
 		
-		return true;
 	}
 	
 	public double getSaldo() {
