@@ -8,7 +8,8 @@ public class Aplicacao {
 		try {
 			banco.realizarOperacao();
 		} catch (BancoException e) {
-			System.out.println("Ocorreu um erro: "+e.getMessage());			
+			System.out.println("Ocorreu um erro: "+e.getMessage());		
+			System.out.println(e.getCause());
 		}
 
 	}
