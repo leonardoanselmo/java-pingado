@@ -6,8 +6,12 @@ public class Aplicacao {
 		Object o1 = new Object();
 		Object o2 = new Object();
 		
-		boolean iguais = Comparador.comparar(o1, o2);
-		System.out.println(iguais);
+		try {
+			boolean iguais = Comparador.comparar(null, o2);
+			System.out.println(iguais);			
+		} catch (NullPointerException e) {
+			System.out.println("O objeto é nulo.");
+		}
 
 	}
 
