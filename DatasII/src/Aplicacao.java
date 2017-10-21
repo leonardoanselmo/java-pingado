@@ -1,4 +1,6 @@
 import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -32,6 +34,23 @@ public class Aplicacao {
 		DateFormat df3 = DateFormat.getDateInstance(DateFormat.LONG);
 		String f3 = df3.format(d);
 		System.out.println(f3);
+		
+		SimpleDateFormat df5 = new SimpleDateFormat("yyyy-MM-dd");
+		String f5 = df5.format(d);
+		System.out.println(f5);
+		
+		SimpleDateFormat df6 = new SimpleDateFormat("dd.MM.yyyy");
+		String f6 = df6.format(d);
+		System.out.println(f6);
+		
+		String sd1 = "2030-07-01";
+		SimpleDateFormat df7 = new SimpleDateFormat("yyyy-MM-dd");
+		try {
+			Date d1 = df7.parse(sd1);
+			System.out.println(d1);
+		} catch (ParseException e) {			
+			e.printStackTrace();
+		}
 		
 	}
 
