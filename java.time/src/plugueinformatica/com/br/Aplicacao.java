@@ -2,7 +2,9 @@ package plugueinformatica.com.br;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
+import java.time.Period;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 
 public class Aplicacao {
 
@@ -16,7 +18,12 @@ public class Aplicacao {
 		Duration d = Duration.between(d1, d2);
 		
 		System.out.println("Quantas horas de vida eu tenho: " + d.toHours());
-		System.out.println("Quantos dias de vida eu tenho: " + d.toDays());		
+		System.out.println("Quantos dias de vida eu tenho: " + d.toDays());
+		
+		Period p = Period.between(d1.toLocalDate(), d2.toLocalDate());
+		System.out.println("Quantos meses de vida eu tenho: "+ p.toTotalMonths());
+		
+		System.out.println("Quantos anos eu tenho: "+ChronoUnit.YEARS.between(d1, d2));
 
 	}
 
