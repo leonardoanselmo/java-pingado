@@ -14,6 +14,10 @@ public class Aplicacao {
 		System.out.println(String.format(l, "%d - %12s %09.2f %s", 2, prod2.getNome(), prod2.getPeso(), prod2.getFormattedDataValidate()));
 		System.out.println(String.format(l, "%d - %12s %09.2f %s", 3, prod3.getNome(), prod3.getPeso(), prod3.getFormattedDataValidate()));
 		
+		System.out.println(Produto.processar(null));
+		System.out.println(Produto.processar("ab"));
+		System.out.println(Produto.processar("abcdfg"));
+		
 	}
 
 }

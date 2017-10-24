@@ -36,6 +36,24 @@ public class Produto {
 		return df.format(dataValidade);
 	}
 	
+	public static String processar(String s){
+		if (s == null) {
+			return null;
+		}
+		s = s.toUpperCase();
+		if (s.length() < 3) {
+			return s;
+		}
+		
+		String s2 = s.substring(0, 3);
+		
+		StringBuffer sb = new StringBuffer(s2);
+		
+		sb.reverse();
+		
+		return sb.toString() + " - " + s.substring(3);		
+		
+	}
 	
 
 }
