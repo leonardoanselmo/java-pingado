@@ -17,6 +17,10 @@ public class Aplicacao {
 		System.out.println(720-(soma+300));
 		
 		System.out.println(x);
+		
+		int num = 50;
+		double num1 = (double) num;
+		System.out.println(num1);
 
 	}
 
