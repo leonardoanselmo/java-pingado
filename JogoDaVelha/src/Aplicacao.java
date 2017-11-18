@@ -15,7 +15,7 @@ public class Aplicacao {
 		jogadas.add(new int[] {2, 2, '0'});
 		jogadas.add(new int[] {2, 0, 'X'});
 		jogadas.add(new int[] {0, 2, '0'});
-		jogadas.add(new int[] {1, 2, 'X'});
+		jogadas.add(new int[] {1, 2, 'X'}); 
 		jogadas.add(new int[] {1, 0, '0'});
 				
 		Tabuleiro.preencherTabuleiro(jogadas, tabuleiro);
