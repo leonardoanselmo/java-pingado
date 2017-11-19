@@ -1,5 +1,5 @@
 
-public class Produto {
+public class Produto implements Comparable<Produto>{
 	
 	private String nome;
 	private double valor;
@@ -40,6 +40,13 @@ public class Produto {
 		} else if (!nome.equals(other.nome))
 			return false;
 		return true;
+	}
+	
+	public int compareTo(Produto p){
+		Double valor1 = Double.valueOf(this.valor);
+		Double valor2 = Double.valueOf(p.valor);
+		
+		return valor1.compareTo(valor2);
 	}
 	
 	@Override
