@@ -36,7 +36,7 @@ public class TicketPress {
 		}			
 	}
 	
-	public void statusConta(){
+	void statusConta(){
 		System.out.println("Total da Conta: "+getBalanco());
 	}
 
